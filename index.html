@@ -16,16 +16,22 @@
 <body>
     <!-- Sezione gioco dei dadi -->
     <section class="roll-game">
-        <h1>Gioco del dado</h1>
+        <h2>Gioco del dado</h2>
         <p id="user-dice"></p>
         <p id="computer-dice"></p>
-        <h2 id="winner"></h2>
+        <h3 id="winner"></h3>
+    </section><br><br><br>
+
+    <!-- Sezione fake login -->
+    <section class="fake-login">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="francesco@boolean.com" required>
+            <button type="button" id="loginButton">Accedi</button>
+        </form>
+        <p id="message" class="fw-bold"></p>
     </section>
-
-
-
-
-
     <script src="script.js"></script>
 </body>
 
