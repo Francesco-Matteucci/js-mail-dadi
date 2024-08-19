@@ -19,14 +19,20 @@ computerDice.innerText = "Il computer ha tirato un " + computerRoll;
 
 // Determino il vincitore
 let result = "E' un pareggio!";
+let resultClass = "draw";
+
 if (userRoll > computerRoll) {
     result = "Hai vinto!"
+    resultClass = "win"
 } else if (userRoll < computerRoll) {
     result = "Hai perso!"
+    resultClass = "lose"
 }
 
 //Stampo il vincitore in pagina
 winner.innerText = result
+//Applico la classe al messaggio, per il colore del testo
+winner.className = resultClass;
 
 
 //? --------------------------------------------------------------------------------------------------------------------
